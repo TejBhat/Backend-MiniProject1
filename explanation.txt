@@ -1,0 +1,22 @@
+The line `module.exports = mongoose.model('user', userSchema);` is exporting a Mongoose model. Here's a simple explanation:
+
+1. **Mongoose**: A library that helps you interact with a MongoDB database using JavaScript.
+2. **userSchema**: A schema that defines the structure of the documents in the "user" collection in the MongoDB database. It specifies that each user document will have `username`, `name`, `age`, `email`, and `password` fields.
+3. **mongoose.model('user', userSchema)**: This creates a model named 'user' based on the `userSchema`. The model is a constructor that you can use to create and read documents from the "user" collection in the database.
+4. **module.exports**: This makes the 'user' model available to other files in your project. When another file requires this file, it will get the 'user' model.
+In summary, this line allows you to use the 'user' model in other parts of your application to interact with the "user" collection in your MongoDB database.
+
+
+ <script src="https://cdn.tailwindcss.com"></script>
+ i am using this so that i can use tailwindcss
+
+ <form action="">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="username" name="username">
+        <input type="number" placeholder="age" name="age">
+        <input type="email" placeholder="email" name="email">
+        <input type="password" placeholder="password" name="password">
+    </form>
+    in index.ejs mei i have created form so that i can create a account which has this inputs which i have created in userSchema
+
+    
